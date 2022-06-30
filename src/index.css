@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  --clr-heading-border: #49a6e9;
+  --clr-body: #f1f5f8;
+  --clr-refresh-btn: #49a6e9;
+  --clr-heading: #102a42;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 1rem;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: var(--clr-body);
+}
+
+/* 
+===============
+main-heading
+===============
+*/
+
+.main-heading {
+  font-size: 2.5rem;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.main-heading::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 55%;
+  height: 4px;
+  left: 25%;
+  top: 13%;
+  background-color: var(--clr-heading-border);
+}
+
+/* 
+===============
+main-heading
+===============
+*/
+
+.refreshBtn {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: white;
+  background-color: var(--clr-refresh-btn);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
 }

@@ -1,0 +1,111 @@
+/*
+==================  
+tour
+==================  
+*/
+.tour {
+  --clr-price: #49a6e9;
+  --clr-price-background: #ebf7ff;
+  --clr-info: #6f89a1;
+  --clr-btn: #bb2525;
+  --clr-heading: #102a42;
+  background-color: white;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  margin-inline: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* 
+===================
+image-div
+===================
+*/
+
+.image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+/* 
+===================
+content-div
+===================
+*/
+
+.content-div {
+  padding: 2rem;
+}
+
+.content-div button {
+  color: var(--clr-btn);
+  background-color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  width: 200px;
+  height: 2rem;
+  margin-inline: auto;
+  border: none;
+  border: 2px solid var(--clr-btn);
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+/* 
+===================
+name-price-div
+===================
+*/
+
+.name-price-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-price-div > * {
+  margin: 0px;
+}
+
+.name-price-div h2 {
+  color: var(--clr-heading);
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.name-price-div p {
+  color: var(--clr-price);
+  background-color: var(--clr-price-background);
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 0.25rem 0.5rem;
+  align-self: center;
+}
+
+/* 
+===================
+info-div
+===================
+*/
+
+.info-div p {
+  color: var(--clr-info);
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-div button {
+  font-size: 1rem;
+  color: var(--clr-price);
+  display: inline-block;
+  border: none;
+  width: 110px;
+}
